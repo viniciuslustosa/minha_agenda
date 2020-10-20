@@ -1,0 +1,465 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: #111;
+}
+
+header.header {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    position: absolute;
+}
+
+div.content-header {
+    width: 300px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.logo {
+    width: 200px;
+    height: 70px;
+    background-image: url(../img/LogoMinhaAgenda.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+a.sair-btn {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+}
+
+/* Main */
+
+main.main {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#divBusca{
+    width:100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+}
+
+#txtBusca{
+    background-color:#131313;
+    border-radius: 10px 0 0 10px;
+    padding-left:5px;
+    font-size:15px;
+    border:none;
+    height:32px;
+    width:400px;
+    transition: width 1s;
+    color: white;
+}
+  
+#btnBusca{
+    border:none;
+    float:right;
+    height:34px;
+    border-radius: 0 7px 7px 0;
+    width:  100px;
+    font-weight:bold;
+    background-image: url("../img/busca.png");
+    background-size: 100px;
+    background-position: center;
+    color: white;
+    cursor: pointer;
+}
+div.content {
+    width: 100%;
+    height: 70%;
+    padding-bottom: 35px;
+    padding-top: 120px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+}
+
+div.content-list {
+    width: 95%;
+    height: 87%;
+    background-color: rgb(61, 61, 61);
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.item_ctt {
+    width: 100%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    padding: 4px 0;
+}
+  
+.item_info {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34);
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 8px;
+    padding-top: 5px;
+}
+
+.nome_ctt {
+    width: 40%;
+    margin-left: 10px;
+}
+  
+.telefone_ctt {
+    width: 40%;
+}
+
+.white_ctt {
+    background-color: rgb(48, 48, 48);
+}
+  
+.gray_ctt {
+    background-color: #252525;
+}
+
+.blue_button {
+    background-color: rgb(34, 116, 192);
+}
+
+.red_button {
+    background-color: rgb(202, 34, 34);
+}
+
+.btn_item {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    margin-right: 8px;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+}
+
+div.content-button {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.btn-add {
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color:#26ac53;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(24, 24, 24);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+}
+
+p.footer-copy{
+    color: rgb(212, 212, 212);
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.hidden-area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.699);
+    align-items: center;
+    align-content: center;
+    z-index: 99;
+}
+  
+#edt-area {
+    display: none;
+}
+
+#add-area {
+    display: none;
+} 
+
+#delete-area {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+  
+.header-form {
+    background-color: rgb(24, 24, 24);
+    padding: 30px;
+} 
+  
+  
+h2 {
+    text-align: justify;
+}
+  
+#h1-edt {
+    margin: auto;
+    color: #26ac53;
+    font-size: 40px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+  
+#h2-edt {
+    color: #cccccc;
+    font-size: 14px;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+  
+#h1-delete {
+    margin: 20px auto;
+    color: #26ac53;
+    font-size: 30px;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+  
+#h1-add {
+    margin: auto;
+    color: #26ac53;
+    font-size: 40px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+  
+#h2-add {
+    color: #cccccc;
+    font-size: 14px;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    justify-content: center;
+}
+  
+.h2-delete {
+    color: #858585;
+    font-size: 15px;
+    width: 60%;
+    margin: 20px auto;
+}
+.card-form {
+    width: 50%;
+    background-color: rgb(62, 62, 62);
+    margin: 0% auto;
+    border-radius: 10px;
+}
+  
+.card-form-delete {   
+    width: 35%;
+    background-color: rgb(24, 24, 24);
+    margin: 0% auto;
+    border-radius: 10px;
+}
+  
+#fields-form {
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    /*columns: 2;
+    column-gap: 40px;
+    column-rule: 4px solid green;*/
+}
+
+#fields-form-add {
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    /*columns: 2;
+    column-gap: 40px;
+    column-rule: 4px solid green;*/
+}
+  
+.linha {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2%;
+}
+  
+.div-1 {
+    width: 100%;
+} 
+  
+.div-2 {
+    width: 50%;
+    justify-content: left;
+}
+  
+.div-3 {
+    width: 33%;
+}
+  
+p {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.campo-texto{
+    width: 80%;
+    height: 22px;
+    font-size: 14px;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(181, 181, 181);
+    background-color: rgb(45, 45, 45);
+}
+  
+#btn-form {
+    display: flex;
+    width: 90%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 5%;
+}
+  
+.btn-action-edt {
+    min-width: 100px;
+    height: 40px;
+    color: white;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.btn-action-delete {
+    width: 20%;
+    height: 40px;
+    color: white;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 20%;
+    border: none;
+    border-radius: 5px;
+}
+  
+.btn-editar {
+    background-color: rgb(22, 165, 65);
+    font-weight:bold;
+}
+  
+.btn-redefinir {
+    background-color: rgb(18, 125, 212);
+    font-weight:bold;
+}
+  
+.btn-deletar {
+    background-color: rgb(22, 165, 65);
+    font-weight:bold;
+} 
+  
+.button-items {
+    margin: 20px 0 10px 0;
+    display: flex;
+}
+  
+.btn-cancelar {
+    background-color: rgb(207, 39, 39);
+    font-weight:bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    main.main {
+        min-width: 100%;
+    }
+    div#divBusca {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .card-form {
+      width: 100%;
+    }
+    .card-form-delete {
+      width: 80%;
+      height: 250px;
+    }
+  }

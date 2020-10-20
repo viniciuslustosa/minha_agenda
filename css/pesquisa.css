@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100% !important;
+  overflow: hidden;
+  align-items: center;
+  background-color: rgb(231, 231, 231);
+}
+
+a.logo {
+  width: 200px;
+  height: 60px;
+  background-image: url(../img/LogoMinhaAgenda.png);
+  background-size: 130px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 60px;
+}
+
+a.sair-btn {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px 0 50px;
+  font-size: 13px;
+}
+
+.content {
+  width: 70%;
+  height: 75%;
+  margin: 20px auto 5px auto;
+  background-color: white;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.content_ctt {
+  background-color: white;
+}
+
+.item_ctt {
+  width: 100%;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(58, 58, 58);
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  padding: 4px 0;
+}
+
+.item_info {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(34, 34, 34);
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 8px;
+  padding-top: 5px;
+}
+
+.nome_ctt {
+  width: 33%;
+  margin-left: 10px;
+}
+
+.telefone_ctt {
+  width: 33%;
+}
+
+.cidade_ctt {
+  width: 33%;
+}
+
+.btn_item {
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  margin-right: 8px;
+  text-decoration: none;
+}
+
+.white_ctt {
+  background-color: white;
+}
+
+.gray_ctt {
+  background-color: rgb(235, 235, 235);
+}
+
+.blue_button {
+  background-color: rgb(34, 116, 192);
+}
+
+.red_button {
+  background-color: rgb(202, 34, 34);
+}
+
+.hidden-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.699);
+  align-items: center;
+  align-content: center;
+  z-index: 99;
+}
+
+#edt-area {
+  display: none;
+}
+#add-area {
+  display: none;
+}
+#send-area {
+  display: none;
+}
+
+#delete-area {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-form {
+  background-color: rgb(24, 24, 24);
+  padding: 30px;
+}
+
+
+h2 {
+  text-align: justify;
+}
+
+#h1-edt {
+  margin: auto;
+  color: #26ac53;
+  font-size: 40px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+#h2-edt {
+  color: #cccccc;
+  font-size: 14px;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  justify-content: center;
+}
+
+#h1-delete {
+  margin: 0 auto;
+  color: #26ac53;
+  font-size: 30px;
+  width: 80%;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+#h1-add {
+  margin: auto;
+  color: #26ac53;
+  font-size: 40px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+#h2-add {
+  color: #cccccc;
+  font-size: 14px;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  justify-content: center;
+}
+
+#h1-send {
+  margin: auto;
+  color: #26ac53;
+  font-size: 40px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.h2-delete {
+  color: #858585;
+  font-size: 15px;
+  width: 60%;
+  margin: 20px auto;
+}
+.card-form {
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+}
+
+.card-form-delete {
+  width: 35%;
+  height: 200px;
+  background-color: rgb(24, 24, 24);
+  margin: 0% auto;
+  border-radius: 10px;
+}
+
+#fields-form {
+  width: 90%;
+  height: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+#fields-form-add {
+  width: 90%;
+  height: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+#fields-form-mail {
+  width: 90%;
+  height: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.linha {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.div-1 {
+  width: 100%;
+}
+
+.div-2 {
+  width: 50%;
+  justify-content: left;
+}
+
+.div-3 {
+  width: 33%;
+}
+
+p {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #272727;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.campo-texto{
+  width: 80%;
+  height: 22px;
+  font-size: 14px;
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+  color: rgb(43, 43, 43);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(182, 182, 182);
+}
+
+#btn-form {
+  display: flex;
+  width: 90%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 5%;
+}
+
+.btn-action-edt {
+  min-width: 100px;
+  height: 40px;
+  color: white;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.btn-action-delete {
+  width: 20%;
+  height: 40px;
+  color: white;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 20%;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-editar {
+  background-color: rgb(22, 165, 65);
+  font-weight:bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-redefinir {
+  background-color: rgb(18, 125, 212);
+  font-weight:bold;
+}
+
+.btn-deletar {
+  background-color: rgb(22, 165, 65);
+  font-weight:bold;
+}
+
+.button-items {
+  margin: 50px 0 0 0;
+}
+
+.btn-cancelar {
+  background-color: rgb(207, 39, 39);
+  font-weight:bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#divBusca{
+  width:100%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(31, 31, 31);
+}
+
+#txtBusca{
+  background-color:white;
+  border-radius: 10px 0 0 10px;
+  padding-left:5px;
+  font-size:15px;
+  border:none;
+  height:32px;
+  width:400px;
+  transition: width 1s;
+}
+
+#btnBusca{
+  border:none;
+  float:right;
+  height:34px;
+  border-radius: 0 7px 7px 0;
+  width: 50px;
+  font-weight:bold;
+  background-image: url("../img/busca.png");
+  background-size: 100px;
+  background-position: center;
+  color: white;
+  cursor: pointer;
+}
+
+#divBusca img{
+  float:left;
+}
+
+div.content_button {
+  width: 70%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.conj_button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+button.btn-action-adicionar {
+  width: 50%;
+  height: 32px;
+  background-color: #26ac53;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.btn-action-email {
+  width: 50%;
+  height: 32px;
+  background-color: rgb(34, 116, 192);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Footer */
+footer{
+  width: 100%;
+  height: 35px;
+  background-color: rgb(24, 24, 24);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+}
+p.footer-copy{
+  color: rgb(212, 212, 212);
+  font-size: 11px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.email-item:hover {
+  background-color: #e8e8e8;
+}
+
+@media only screen and (max-width: 500px) {
+  div.content{
+      min-width: 100%;
+  }
+  a.logo{
+    margin-right: 5px;
+    background-size: 100px;
+  }
+  #txtBusca{
+    width: 250px;
+  }
+  a.sair-btn{
+    margin: 0 10px 0 15px;
+  }
+  .card-form-delete {
+    width: 80%;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .card-form {
+    width: 100%;
+  }
+}
